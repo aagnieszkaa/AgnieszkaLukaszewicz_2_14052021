@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <!--Insertion des icônes FontAwesome-->
     <script defer src="js/all.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <!--Insertion de la police Raleway de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!--Ajout de mon CSS-->
+    <link rel="stylesheet" href="css/style.css">
     <title>Reservia</title>
 </head>
 <body>
 <!------------------------------Header------------------------------>
-    <header>
-        <img src="images\logo\Reservia.svg" alt="Logo Reservia">
-        <nav>
+    <header class="header-page">
+        <img src="images\logo\Reservia.svg" alt="Logo Reservia" class="header-page__logo">
+        <nav class="header-page__nav">
             <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
-                <li><a href="#">S'inscrire</a></li>
+                <li><a href="#" class="header-page__nav__link header-page__nav__link--active">Hébergements</a></li>
+                <li><a href="#" class="header-page__nav__link header-page__nav__link--black">Activités</a></li>
+                <li><a href="#" class="header-page__nav__link header-page__nav__link--bold">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
@@ -24,15 +31,15 @@
 <!------------------------------Main------------------------------>
 <main>
     <!------------------------------Main///Header------------------------------>
-    <header>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h3>En plein centre ville ou en pleine nature</h2>
-        <div>
-            <i class="fas fa-map-marker-alt"></i> 
-            <input type="texte" name="ville" placeholder="Marseille, France"/>
-            <input type="submit" value="recherche"/>
-        </div>
-        <nav>
+    <header class="header-main">
+        <h1 class="header-main__heading1">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h3  class="header-main__heading3">En plein centre ville ou en pleine nature</h2>
+        <form class="header-main__search">
+            <label class="header-main__search__icon"><i class="fas fa-map-marker-alt "></i></label>
+            <input type="texte" name="ville" value="Marseille, France" class="header-main__search__input"/>
+            <input type="submit" value="Rechercher" class="header-main__search__input-submit"/>
+        </form>
+        <nav class="header-main__nav">
             <ul>Filtres
                 <li><a href="#"><i class="fas fa-money-bill-wave"></i>Économique</a></li>
                 <li><a href="#"><i class="fas fa-child"></i>Familial</a></li>

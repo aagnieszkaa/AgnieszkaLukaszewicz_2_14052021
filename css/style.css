@@ -4,125 +4,160 @@
 }
 html
 {
-    margin: 30px 30px 0 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
 }
 *
 {
-    font-family: 'Raleway', sans-serif;
     box-sizing: inherit;
-    font-size: 1rem;
 }
+
 /*********************Header // Page*********************/
-.header-page
+.header, .main
+{
+    margin: 0 50px 0 50px;
+}
+.header
 {
     position: relative;
     height: 15vh; 
-    /*Question: Pourquoi les éléments se superposent si height=auto ?(h1 du main) Le header ne devrait pas avoir
-    la hauteur de ses éléments ? */
 }
-.header-page__logo, .header-page__nav
+.header__logo, .header__nav
 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%); /*Pour enlever la taille de l'élément lors du centrage*/
 }
-.header-page__logo
+.header__logo
 {
     left: 0;   
 }
-.header-page__nav
+.header__nav
 {
     right: 0;
 }
-.header-page__nav ul
+.header__nav ul
 {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.header-page__nav__link
+.header__nav__link
 {
     text-decoration: none;
     color: #0065FC;
     padding: 25px 25px 0 25px; /*Pour espacer les éléments et éloigner la bordure */
 }
-.header-page__nav__link--black
+.header__nav__link--black
 {
     color: black;
 }
-.header-page__nav__link--bold
+.header__nav__link--bold
 {
     font-weight: bold;
 }
-.header-page__nav__link--active
+.header__nav__link--active
 {
     border-top: 2px solid #0065FC;
 }
 /*********************Fin Header // Page*********************/
 /*********************Main*********************/
 /*********************Header // Main*********************/
-.header-main__heading1
+.main__top__heading1
 {
     font-size: 1.3em;
     font-weight: bold;
     margin: 15px 0 15px 0;
 }
-.header-main__heading3
+.main__top__heading4
 {
     margin-bottom: 15px;
+    font-size: 0.95em;
 }
-.header-main__search
+.main__top__search
 {
     height: 6vh;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
-.header-main__search__icon, .header-main__search__input, .header-main__search__input-submit
+.main__top__search__icon, .main__top__search__input, .main__top__search__input-submit
 {
     height: 100%;
     
 }
-.header-main__search__icon
+.main__top__search__icon
 {
     background-color: #F2F2F2;
     display: flex;
     align-items: center;
     padding: 0 13px 0 13px;
-    border-radius: 30% 0 0 30%;
+    border-radius: 10px 0 0 10px;
 }
-.header-main__search__input-submit
+.main__top__search__input-submit
 {
-    border-radius: 0 30% 30% 0; /*border radius bizarre, pourquoi ? // les mêmes valeurs que dans l'icône*/
+    border-radius: 0 10px 10px 0; 
     background-color: #0065FC;
     color: white;
     border: none;
     padding: 10px;
 }
-.header-main__search__input
+.main__top__search__input
 {
     font-weight: bold;
-    padding: 7px;
+    padding: 7px 7px 7px 12px;
     border: 1px solid #F2F2F2;
-
+    font-size: 1em;
 }
+input[type=checkbox] 
+{
+    display:none;
+} /*Pour enlever les petites bulles de mes filtres radio*/
 
-
-/*** a retravailler
-.header-main__nav ul
+.main__top__filtres
 {
     display: flex;
-    color: black;
-    text-decoration: none;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 0 20px 0;
 }
-.header-main__nav ul a
+.main__top__filtre-heading
 {
-    color: black;
-    text-decoration: none;
+    padding: 12px;
+    font-weight: bold;
 }
-.header-main__nav ul a i
+.main__top__filtre-child
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    padding: 12px 12px 12px 40px;
+    font-weight: bold;
+    position: relative;
+    transform: scale(1);
+    transition: transform 200ms;   
+}
+.main__top__filtre-child:hover
+{
+    transform: scale(1.15);
+}
+
+input[type="checkbox"]:checked + label i
+{
+    background-color: #adceff;
+}
+.main__top__filtre-child i
 {
     color: #0065FC;
-}
-****/
+    padding: 0 5px 0 5px;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    width: 35px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} /*Question : pourquoi le flex marche ici ? L'icône est le dernier élément.*/

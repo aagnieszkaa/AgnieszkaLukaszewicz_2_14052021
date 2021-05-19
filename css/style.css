@@ -63,7 +63,7 @@ html
 }
 /*********************Fin Header // Page*********************/
 /*********************Main*********************/
-/*********************Header // Main*********************/
+/*********************Top // Main*********************/
 .main__top__heading1
 {
     font-size: 1.3em;
@@ -161,3 +161,104 @@ input[type="checkbox"]:checked + label i
     align-items: center;
     justify-content: center;
 } /*Question : pourquoi le flex marche ici ? L'icône est le dernier élément.*/
+.main__top__info
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+.main__top__info__icon
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    color: #0065FC;
+    font-size: 0.9em;
+    padding: 5px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+}
+.main__top__info__text
+{
+    padding: 5px;
+    margin-left: 5px;
+}
+/*********************Fin Top // Main*********************/
+/*********************Section1 // Main*********************/
+.section1__left
+{
+    background-color: #F2F2F2;
+    width: 65%;
+    height: 90vh;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.section1__left h2
+{
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 20px 0 0 5px;
+}
+.section1__left__card-container
+{
+    height: 85%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+.section1__left__card-container_card
+{
+    height: 43%;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 5px; /*Pour donner de l'espace blanc*/
+}
+.section1__left__card-container_card h3
+{
+    font-weight: bold;
+    margin: 5px 0;
+}
+.section1__left__card-container_card p
+{
+    margin-bottom: 5px; /*Pour espaces des étoiles, le margin en haut est déjà établi par le titre*/
+    font-size: 0.9em;
+}
+.section1__left__card-container__card__img-container
+{
+    align-self: center;
+    height: 65%;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+.section1__left__card-container__card__img-container img
+{
+    width: 100%;
+}
+
+.section1__left__link
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-left: 5px; /*Pour aligner au H2*/
+}
+.img--vertical
+{
+    transform: translateY(-30%); /*Bouger vers le haut les images verticales dans leurs cadres*/
+}
+.star
+{
+    color: #0065FC;
+    font-size: 0.8em;
+}
+.star--grey
+{
+    color:#d9d9d9;
+}
+/*********************Fin Section1 // Main*********************/

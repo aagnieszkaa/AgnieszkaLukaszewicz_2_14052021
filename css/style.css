@@ -185,17 +185,24 @@ input[type="checkbox"]:checked + label i
     margin-left: 5px;
 }
 /*********************Fin Top // Main*********************/
+/*********************Main // Général*********************/
+.section1
+{
+    display: flex;
+    justify-content: space-between;
+}
+/*********************Main // Général*********************/
 /*********************Section1 // Main*********************/
 .section1__left
 {
     background-color: #F2F2F2;
-    width: 65%;
     height: 90vh;
     margin-bottom: 20px;
     padding: 10px 20px;
     border-radius: 20px;
+    width: 65%;
 }
-.section1__left h2
+#section1__left__heading2
 {
     font-weight: bold;
     font-size: 1.3em;
@@ -218,6 +225,8 @@ input[type="checkbox"]:checked + label i
     flex-direction: column;
     border-radius: 20px;
     padding: 5px; /*Pour donner de l'espace blanc*/
+    text-decoration: none;
+    color: black;
 }
 .section1__left__card-container_card h3
 {
@@ -251,6 +260,7 @@ input[type="checkbox"]:checked + label i
 .img--vertical
 {
     transform: translateY(-30%); /*Bouger vers le haut les images verticales dans leurs cadres*/
+    width: 100%;
 }
 .star
 {
@@ -262,3 +272,63 @@ input[type="checkbox"]:checked + label i
     color:#d9d9d9;
 }
 /*********************Fin Section1 // Main*********************/
+
+.section1__right
+{
+    width: 30%;
+    margin-left: 20px;
+    height: 90vh;
+    background-color: #F2F2F2;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.section1__right__card-container_card
+{
+    display: flex;
+    height: 25%;
+    width: 90%;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+.section1__right__card-container__card__img-container
+{
+    width: 40%;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+}
+.section1__right__card-container__card__img-container_img
+{
+    height: 100%;
+    min-width: 100%;
+}
+.section1__right__card-container__card__text-container
+{
+
+    margin-left: 10px;
+    align-self: center;
+    width: 50%;
+}
+.section1__right__card-container__card__text-container h3
+{
+    font-weight: bold;
+}
+.section1__right__title
+{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 20px 5px 0 5px;
+}
+.section1__right__card-container_card p
+{
+    margin-bottom: 30px; /*Pour espaces des étoiles*/
+    font-size: 0.9em;
+}

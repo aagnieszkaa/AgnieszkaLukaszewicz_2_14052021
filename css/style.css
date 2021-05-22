@@ -13,7 +13,7 @@ html
 }
 
 /*********************Header // Page*********************/
-.header, .main
+.header, main
 {
     margin: 0 50px 0 50px;
 }
@@ -64,30 +64,30 @@ html
 /*********************Fin Header // Page*********************/
 /*********************Main*********************/
 /*********************Top // Main*********************/
-.main__top__heading1
+.top__heading1
 {
     font-size: 1.3em;
     font-weight: bold;
     margin: 15px 0 15px 0;
 }
-.main__top__heading4
+.top__heading4
 {
     margin-bottom: 15px;
     font-size: 0.95em;
 }
-.main__top__search
+.top__search
 {
     height: 6vh;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
-.main__top__search__icon, .main__top__search__input, .main__top__search__input-submit
+.top__search__icon, .top__search__input, .top__search__input-submit
 {
     height: 100%;
     
 }
-.main__top__search__icon
+.top__search__icon
 {
     background-color: #F2F2F2;
     display: flex;
@@ -95,7 +95,7 @@ html
     padding: 0 13px 0 13px;
     border-radius: 10px 0 0 10px;
 }
-.main__top__search__input-submit
+.top__search__input-submit
 {
     border-radius: 0 10px 10px 0; 
     background-color: #0065FC;
@@ -103,7 +103,7 @@ html
     border: none;
     padding: 10px;
 }
-.main__top__search__input
+.top__search__input
 {
     font-weight: bold;
     padding: 7px 7px 7px 12px;
@@ -115,19 +115,19 @@ input[type=checkbox]
     display:none;
 } /*Pour enlever les petites bulles de mes filtres radio*/
 
-.main__top__filtres
+.top__filtres
 {
     display: flex;
     justify-content: space-between;
     width: 70%;
     margin: 0 0 20px 0;
 }
-.main__top__filtre-heading
+.top__filtre-heading
 {
     padding: 12px;
     font-weight: bold;
 }
-.main__top__filtre-child
+.top__filtre-child
 {
     border: 2px solid #F2F2F2;
     border-radius: 20px;
@@ -137,16 +137,17 @@ input[type=checkbox]
     transform: scale(1);
     transition: transform 200ms;   
 }
-.main__top__filtre-child:hover
+.top__filtre-child:hover
 {
     transform: scale(1.15);
 }
 
 input[type="checkbox"]:checked + label i
 {
-    background-color: #adceff;
+    background-color: #94bfff; /*15% lightness HSL plus foncé*/
+    color: #003b94; /*20% lightness HSL plus foncé*/
 }
-.main__top__filtre-child i
+.top__filtre-child i
 {
     color: #0065FC;
     padding: 0 5px 0 5px;
@@ -161,12 +162,12 @@ input[type="checkbox"]:checked + label i
     align-items: center;
     justify-content: center;
 } /*Question : pourquoi le flex marche ici ? L'icône est le dernier élément.*/
-.main__top__info
+.top__info
 {
     display: flex;
     margin-bottom: 20px;
 }
-.main__top__info__icon
+.top__info__icon
 {
     border: 2px solid #F2F2F2;
     border-radius: 50px;
@@ -179,7 +180,7 @@ input[type="checkbox"]:checked + label i
     justify-content: center;
     font-size: 0.8em;
 }
-.main__top__info__text
+.top__info__text
 {
     padding: 5px;
     margin-left: 5px;
@@ -193,6 +194,7 @@ input[type="checkbox"]:checked + label i
 }
 /*********************Main // Général*********************/
 /*********************Section1 // Main*********************/
+/*********************Gauche // Section1 // Main*********************/
 .section1__left
 {
     background-color: #F2F2F2;
@@ -227,6 +229,7 @@ input[type="checkbox"]:checked + label i
     padding: 5px; /*Pour donner de l'espace blanc*/
     text-decoration: none;
     color: black;
+    box-shadow: 0 3px 9px 0 #d9d9d9;
 }
 .section1__left__card-container_card h3
 {
@@ -259,7 +262,7 @@ input[type="checkbox"]:checked + label i
 }
 .img--vertical
 {
-    transform: translateY(-30%); /*Bouger vers le haut les images verticales dans leurs cadres*/
+    transform: translateY(-25%); /*Bouger vers le haut les images verticales dans leurs cadres*/
     width: 100%;
 }
 .star
@@ -271,8 +274,8 @@ input[type="checkbox"]:checked + label i
 {
     color:#d9d9d9;
 }
-/*********************Fin Section1 // Main*********************/
-
+/*********************Fin Gauche // Section1 // Main*********************/
+/*********************Droit // Section1 // Main*********************/
 .section1__right
 {
     width: 30%;
@@ -296,6 +299,7 @@ input[type="checkbox"]:checked + label i
     background-color: white;
     border-radius: 20px;
     padding: 5px;
+    box-shadow: 0 3px 9px 0 #d9d9d9;
 }
 .section1__right__card-container__card__img-container
 {
@@ -331,4 +335,117 @@ input[type="checkbox"]:checked + label i
 {
     margin-bottom: 30px; /*Pour espaces des étoiles*/
     font-size: 0.9em;
+}
+/*********************Fin Droit // Section1 // Main*********************/
+/*********************Fin Section1 // Main*********************/
+/*********************Section2 // Main*********************/
+.section2
+{
+    height: 70vh;
+}
+#section2__title
+{
+    font-weight: bold;
+    font-size: 1.3em;
+    height: 10%;
+    margin: 20px 0 0 5px;
+}
+.section2__card-container
+{
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.section2__card-container__card, .section2__card-container__card--right
+{
+    width: 22%;
+    height: 100%;
+}
+.section2__card-container__card--right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section2__card-container__card, .section2__card-container__card__small
+{
+    border-radius: 20px;
+    box-shadow: 0 3px 9px 0 #d9d9d9;    
+    text-decoration: none;
+    color: black;
+}
+.section2__card-container__card__small
+{
+    height: 47%;
+}
+
+.section2__card-container__card__img-container, .section2__card-container__card__small__img-container
+{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+.section2__card-container__card__img-container
+{
+    height: 85%;
+}
+.section2__card-container__card__small__img-container
+{
+    height: 68%;
+}
+
+.section2__card-container__card__img-container img 
+{
+    height: 100%;
+    min-width: 100%;
+
+}
+.section2__card-container__card__small__img-container img
+{
+    width: 100%;
+    min-height: 100%;
+    transform: translateY(-30%);
+}
+.section2__card-container__card__title,  .section2__card-container__card__small__title
+{
+    font-weight: bold;
+    margin: 20px;
+}
+.section2__card-container__card__title
+{
+    height: 15%;
+}
+.section2__card-container__card__small__title
+{
+    height: 32%;
+}
+/*********************Fin Section2 // Main*********************/
+/*********************Fin Main*********************/
+/*********************Footer*********************/
+.footer
+{
+    height: 20vh;
+    display: flex;
+    background-color: #F2F2F2;
+    margin-top: 40px;
+    padding: 20px 0 70px 50px;
+}
+.footer__nav
+{
+    width: 30%;
+}
+.footer__nav h4
+{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer__nav ul li
+{
+    margin-bottom: 10px;
+}
+.footer__nav a
+{
+    text-decoration: none;
+    color: black;
+    
 }

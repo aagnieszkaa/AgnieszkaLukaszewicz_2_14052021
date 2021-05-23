@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!--Insertion des icônes FontAwesome-->
     <script src="https://kit.fontawesome.com/4be8471875.js" crossorigin="anonymous"></script>
     <!--Insertion du reset des styles par défaut-->
@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <!--Ajout de mon CSS-->
     <link rel="stylesheet" href="css/style.css">
+        <!-- ... mobile-->
+    <link rel="stylesheet" href="css/style__media-query__mobile.css">
     <title>Reservia</title>
 </head>
 <body>
@@ -22,9 +24,9 @@
         <img src="images\logo\Reservia.svg" alt="Logo Reservia" class="header__logo">
         <nav class="header__nav">
             <ul>
-                <li><a href="#section1__left__heading2" class="header__nav__link header__nav__link--active">Hébergements</a></li>
+                <li><a href="#section1__left__heading2" class="header__nav__link">Hébergements</a></li>
                 <li><a href="#section2__title" class="header__nav__link header__nav__link--black">Activités</a></li>
-                <li><a href="#" class="header__nav__link header__nav__link--bold">S'inscrire</a></li>
+                <li><a href="#" class="header__nav__link header__nav__link--sinscrire">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
@@ -73,7 +75,7 @@
     <!------------------------------Main///Section 1------------------------------>
     <section class="section1">
         <section class="section1__left">
-            <h2 id="section1__left__heading2">Hébergements à Marseille</h2>
+            <h2 id="section1__left__title">Hébergements à Marseille</h2>
             <div class="section1__left__card-container">
                 <a href="#" class="section1__left__card-container_card">
                     <div class="section1__left__card-container__card__img-container">
@@ -162,16 +164,16 @@
             </div>
             <p><a href="#" class="section1__left__link">Afficher plus</a></p>
         </section>
-        <aside class="section1__right">
-            <div class="section1__right__title">
+        <aside class="section1__aside">
+            <div class="section1__aside__title">
                 <h2>Les plus populaires</h2>
                 <i class="fas fa-chart-line"></i>
             </div>
-            <a href="#" class="section1__right__card-container_card">
-                <div class="section1__right__card-container__card__img-container">
-                    <img src="images\hebergements\small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="section1__right__card-container__card__img-container_img">
+            <a href="#" class="section1__aside__card-container__card">
+                <div class="section1__aside__card-container__card__img-container">
+                    <img src="images\hebergements\small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="section1__aside__card-container__card__img-container_img">
                 </div>
-                <div class="section1__right__card-container__card__text-container">
+                <div class="section1__aside__card-container__card__text-container">
                     <h3>Hôtel Le soleil du matin</h3>
                     <p>Nuit à partir de 128<span>€</span></p>
                     <div>
@@ -183,11 +185,11 @@
                     </div>
                 </div>
             </a>
-            <a href="#" class="section1__right__card-container_card">
-                <div class="section1__right__card-container__card__img-container">
-                    <img src="images\hebergements\small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes"  class="section1__right__card-container__card__img-container_img">
+            <a href="#" class="section1__aside__card-container__card">
+                <div class="section1__aside__card-container__card__img-container">
+                    <img src="images\hebergements\small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes"  class="section1__aside__card-container__card__img-container_img">
                 </div>
-                <div class="section1__right__card-container__card__text-container">
+                <div class="section1__aside__card-container__card__text-container">
                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                     <p>Nuit à partir de 71<span>€</span></p>
                     <div>
@@ -199,11 +201,11 @@
                     </div>
                 </div>
             </a>
-            <a href="#" class="section1__right__card-container_card">
-                <div class="section1__right__card-container__card__img-container">
+            <a href="#" class="section1__aside__card-container__card">
+                <div class="section1__aside__card-container__card__img-container">
                     <img src="images\hebergements\small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" class="img--vertical">
                 </div>
-                <div class="section1__right__card-container__card__text-container">
+                <div class="section1__aside__card-container__card__text-container">
                     <h3>Hôtel Tout bleu et Blanc</h3>
                     <p>Nuit à partir de 68<span>€</span></p>
                     <div>

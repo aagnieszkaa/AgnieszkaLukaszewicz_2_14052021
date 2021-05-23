@@ -1,0 +1,17 @@
+@media screen and (max-width: 576px)
+{   
+    .header, main
+    {
+        margin: 0;
+    }
+    .header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__logo, .header__nav
+    {
+        position: static;
+        transform: translateY(50%);
+    }
+}

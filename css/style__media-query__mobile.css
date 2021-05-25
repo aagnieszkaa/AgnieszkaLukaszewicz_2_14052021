@@ -1,5 +1,6 @@
 @media screen and (max-width: 576px)
 {   
+/*********************Header // Page*********************/
     .header, main
     {
         margin: 0;
@@ -8,10 +9,78 @@
     {
         display: flex;
         flex-direction: column;
+        height: 17vh;
     }
     .header__logo, .header__nav
     {
-        position: static;
-        transform: translateY(50%);
+        transform: translateY(0);
     }
+    .header__nav
+    {
+        position: static; /*Pour rendre le header le premier parent positionné pour l'<a> 's'inscrire'*/
+    }
+    .header__nav__link--sinscrire
+    {
+        position: absolute;
+        right: 20px;
+    }
+    .header__logo, .header__nav__link--sinscrire
+    {
+        top: 10px; 
+        height: 7vh;
+    }
+    .header__logo
+    {
+        left: 20px;
+    }
+    .header__nav__link--hebergements, .header__nav__link--activites
+    {
+        height: 4vh;
+        position: absolute;
+        top: 12vh;
+        width: 50vw;
+        text-align: center;
+        border-bottom: 2px solid #F2F2F2;
+        padding: 0 0 10px 0;
+    }
+    .header__nav__link--hebergements:hover, .header__nav__link--activites:hover
+    {
+        border-bottom: 2px solid #0065FC;
+    }
+    .header__nav__link--hebergements
+    {
+        left: 0;
+    }
+    .header__nav__link--activites
+    {
+        right: 0;
+    }
+    .header__nav__link:hover
+    {
+        border-top: 0;
+    }
+/*********************Fin Header // Page*********************/
+    .top__heading1, .top__heading4
+    {
+        margin: 15px;
+    }
+    .top__search
+    {
+        position: relative;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .top__search__input-submit
+    {
+        padding: 0;
+        color: rgba(255, 255, 255, 0);
+        background-image: url("../images/icons/search-solid.svg");
+        background-repeat: no-repeat;
+        background-size: 35%;
+        background-position: center;
+        width: 50px;
+    }
+
+
 }

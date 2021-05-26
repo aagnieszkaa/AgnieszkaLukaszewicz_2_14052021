@@ -60,6 +60,7 @@
         border-top: 0;
     }
 /*********************Fin Header // Page*********************/
+/*********************Top // Main*********************/
     .top__heading1, .top__heading4
     {
         margin: 15px;
@@ -81,6 +82,103 @@
         background-position: center;
         width: 50px;
     }
+    .top__filtres
+    {
+        margin-left: 10px;
+        height: 30vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+    .top__filtre-child i
+    {
+        width: 35px;
+    }
+    .top__filtre-child
+    {
+        width: 57%;
+    }
+    .top__filtre-child--familial, .top__filtre-child--economique
+    {
+        position: absolute;
+        top: 20%;
+        width: 45%;
+    }
+    .top__filtre-child--familial
+    {
+        right: 20px;
+    }
+    .top__filtre-child--economique
+    {
+        left: 0;
+    }
+    .top__filtre-child--romantique
+    {
+        width: 45%;
+        position: absolute;
+        top: 49%;
+    }
+    .top__info
+    {
+        margin-left: 10px;
+        align-items: flex-start;
+    }
+/*********************Fin Top // Main*********************/
+.section1
+{
+    flex-direction: column-reverse;
+}
+.section1__aside
+{
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+.section1__aside__card-container__card
+{
+    align-self: center;
+}
+.section1__left
+{
+    width: 100%;
+    height: 180vh;
+    background-color: white;
+}
+#section1__left__title, .section1__left__link
+{
+    padding: 0;
+}
+#section1__left__title
+{
+    margin: 0 0 20px 0;
+}
+.section1__left__card-container
+{
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 92%;
+    margin-bottom: 25px;
+}
+.section1__left__card-container_card
+{
+    width: 97%;
+    height: 15.5%;
+}
 
 
+.section2
+{
+    height: 180vh;
+}
+.section2__card-container
+{
+    flex-direction: column;
+}
+.section2__card-container__card, .section2__card-container__card--right
+{
+    width: 97%;
+    height: 20%;
+}
 }

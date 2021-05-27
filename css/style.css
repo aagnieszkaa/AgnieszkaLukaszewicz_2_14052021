@@ -1,12 +1,9 @@
 /*********************Généralités*********************/
-:root 
-{
-    box-sizing: border-box;
-}
 html
 {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 *
 {
@@ -25,6 +22,10 @@ html
 .star--grey
 {
     color:#d9d9d9;
+}
+span
+{
+    font-weight: bold;
 }
 /*********************Fin Généralités*********************/
 /*********************Header // Page*********************/
@@ -256,6 +257,10 @@ input[type="checkbox"]:checked + label i
     margin-bottom: 5px; /*Pour espaces des étoiles, le margin en haut est déjà établi par le titre*/
     font-size: 0.9em;
 }
+.section1__left__card-container_card h3, .section1__left__card-container_card p, .stars
+{
+    margin-left: 10px;
+}
 .section1__left__card-container__card__img-container
 {
     align-self: center;
@@ -334,6 +339,7 @@ input[type="checkbox"]:checked + label i
 }
 .section1__aside__card-container__card p
 {
+    margin-top: 10px;
     margin-bottom: 30px; /*Pour espaces des étoiles*/
     font-size: 0.9em;
 }

@@ -125,60 +125,138 @@
         align-items: flex-start;
     }
 /*********************Fin Top // Main*********************/
-.section1
-{
-    flex-direction: column-reverse;
-}
-.section1__aside
-{
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
-}
-.section1__aside__card-container__card
-{
-    align-self: center;
-}
-.section1__left
-{
-    width: 100%;
-    height: 180vh;
-    background-color: white;
-}
-#section1__left__title, .section1__left__link
-{
-    padding: 0;
-}
-#section1__left__title
-{
-    margin: 0 0 20px 0;
-}
-.section1__left__card-container
-{
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 92%;
-    margin-bottom: 25px;
-}
-.section1__left__card-container_card
-{
-    width: 97%;
-    height: 15.5%;
-}
-
-
-.section2
-{
-    height: 180vh;
-}
-.section2__card-container
-{
-    flex-direction: column;
-}
-.section2__card-container__card, .section2__card-container__card--right
-{
-    width: 97%;
-    height: 20%;
-}
+/*********************Section1 // Main*********************/
+    .section1
+    {
+        flex-direction: column-reverse;
+        width: 100vw;
+    }
+    .section1__aside
+    {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .section1__aside__card-container__card
+    {
+        align-self: center;
+    }
+    .section1__left
+    {
+        width: 100%;
+        padding: 0;
+        height: 180vh;
+        background-color: white;
+    }
+    #section1__left__title, .section1__left__link
+    {
+        padding: 0;
+    }
+    #section1__left__title
+    {
+        margin: 20px 0 20px 10px;
+    }
+    .section1__left__link
+    {
+        margin-left: 10px;
+    }
+    .section1__left__card-container
+    {
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 92%;
+        margin-bottom: 25px;
+    }
+    .section1__left__card-container_card
+    {
+        width: 85%;
+        height: 15.5%;
+        overflow: hidden;
+    }
+    .section1__left__card-container__card__img-container
+    {
+        overflow: hidden;
+        width: 99%;
+    }
+/*********************Fin Section1 // Main*********************/
+/*********************Section2 // Main*********************/
+    .section2
+    {
+        height: 150vh;
+        width: 100vw;
+    }
+    #section2__title
+    {
+        height: 3%;
+        margin: 10px 0 0 10px;
+    }
+    .section2__card-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section2__card-container__card, .section2__card-container__card--right
+    {
+        width: 85%;
+        
+    }
+    .section2__card-container__card
+    {
+        height: 16%;
+        margin: 20px 0 20px 0;
+    }
+    .section2__card-container__card--right
+    {
+        height: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .section2__card-container__card__small
+    {
+        height: 45%;
+    }
+    .section2__card-container__card__title
+    {
+        height: 30%;
+        
+    }
+    .section2__card-container__card__title, .section2__card-container__card__small__title
+    {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-left: 10px;
+    }
+    .section2__card-container__card__img-container
+    {
+        height: 70%;
+    }
+/*********************Fin Section2 // Main*********************/
+/*********************Footer*********************/
+    .footer
+    {
+        height: auto;
+        margin: 20px 0 0 0;
+        padding: 5px;
+        flex-direction: column;
+    }
+    .footer__nav
+    {
+        width: 100%;
+        margin: 10px;
+    }
+/*********************Fin Footer*********************/
+/*********************Généralités*********************/
+    .section2__card-container__card__img-container img, .img--vertical, .section2__card-container__card__small__img-container img, .section1__left__card-container__card__img-container img, .section1__aside__card-container__card__img-container_img
+    {
+        object-fit: cover;
+        height: 100%;
+        max-width: none;
+        min-width: 100%;
+        width: auto;
+        transform: translateY(0); 
+    }
+/*********************Fin Généralités*********************/
 }

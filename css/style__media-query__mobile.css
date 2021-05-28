@@ -72,6 +72,10 @@
         display: flex;
         justify-content: center;
     }
+    .top__search__input
+    {
+        width: 60vw;
+    }
     .top__search__input-submit
     {
         padding: 0;

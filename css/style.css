@@ -176,7 +176,7 @@ input[type="checkbox"]:checked + label i
     display: flex;
     align-items: center;
     justify-content: center;
-} /*Question : pourquoi le flex marche ici ? L'icône est le dernier élément.*/
+}
 .top__info
 {
     display: flex;

@@ -88,12 +88,13 @@
     }
     .top__filtres
     {
-        margin-left: 10px;
+        padding-left: 10px;
         height: 30vh;
         width: 100%;
         flex-direction: column;
         justify-content: space-between;
         position: relative;
+        /*wrap*/
     }
     .top__filtre-child i
     {
@@ -113,10 +114,7 @@
     {
         right: 20px;
     }
-    .top__filtre-child--economique
-    {
-        left: 0;
-    }
+
     .top__filtre-child--romantique
     {
         width: 45%;
@@ -187,7 +185,6 @@
 /*********************Section2 // Main*********************/
     .section2
     {
-        height: 150vh;
         width: 100vw;
     }
     #section2__title
@@ -241,7 +238,6 @@
 /*********************Footer*********************/
     .footer
     {
-        height: auto;
         margin: 20px 0 0 0;
         padding: 5px;
         flex-direction: column;
@@ -249,7 +245,7 @@
     .footer__nav
     {
         width: 100%;
-        margin: 10px;
+        padding: 10px;
     }
 /*********************Fin Footer*********************/
 /*********************Généralités*********************/

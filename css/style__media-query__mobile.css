@@ -253,14 +253,13 @@
     }
 /*********************Fin Footer*********************/
 /*********************Généralités*********************/
-    .section2__card-container__card__img-container img, .img--vertical, .section2__card-container__card__small__img-container img, .section1__left__card-container__card__img-container img, .section1__aside__card-container__card__img-container_img
+    .section2__card-container__card__img-container img, .section2__card-container__card__small__img-container img, .section1__left__card-container__card__img-container img, .section1__aside__card-container__card__img-container_img
     {
         object-fit: cover;
         height: 100%;
         max-width: none;
         min-width: 100%;
         width: auto;
-        transform: translateY(0); 
     }
 /*********************Fin Généralités*********************/
 }

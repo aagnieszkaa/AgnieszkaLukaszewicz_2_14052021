@@ -50,13 +50,17 @@ main
     flex-direction: row;
     justify-content: space-around;
 }
+.header__nav ul li
+{
+    text-align: center;
+}
 .header__nav__link
 {
     text-decoration: none;
     color: black;
     padding: 40px 25px 0 25px; /*Pour espacer les éléments et éloigner la bordure*/
 }
-.header__nav__link--sinscrire, .header__nav__link:hover
+.header__nav__link--sinscrire a, .header__nav__link:hover
 {
     color: #0065FC;
 }

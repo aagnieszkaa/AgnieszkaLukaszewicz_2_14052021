@@ -127,8 +127,6 @@ main
     .top__filtres
     {
         display: flex;
-        justify-content: space-between;
-        width: 70%;
         margin-bottom: 15px;
     }
     .top__filtre-heading
@@ -138,6 +136,7 @@ main
     }
     .top__filtre-child
     {
+        margin: 0 5px;
         border: 2px solid #F2F2F2;
         border-radius: 20px;
         padding: 12px 12px 12px 40px; /*40px left pour faire place pour l'icône*/ 
